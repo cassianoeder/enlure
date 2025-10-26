@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
+import { Phone, MapPin } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -50,15 +51,29 @@ const Contact = () => {
   return (
     <section id="contato" className="py-20 bg-primary text-primary-foreground">
       <div className="container mx-auto px-4 lg:px-8">
-        <div className="max-w-2xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Fale conosco</h2>
-            <p className="text-lg text-primary-foreground/90">
+            <p className="text-lg text-primary-foreground/90 mb-8">
               Vamos conversar sobre como a tecnologia pode impulsionar seu pequeno negócio
             </p>
+
+            {/* Contact Info */}
+            <div className="flex flex-col md:flex-row justify-center items-center gap-6 text-primary-foreground/90">
+              <div className="flex items-center gap-2">
+                <Phone size={20} />
+                <a href="tel:+5555999435002" className="hover:text-white transition-colors">
+                  (55) 55 99943-5002
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <MapPin size={20} />
+                <span>Estrada José Chies 1821 - Carlos Barbosa</span>
+              </div>
+            </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6 animate-scale-in">
+          <form onSubmit={handleSubmit} className="space-y-6 animate-scale-in max-w-2xl mx-auto">
             <div>
               <Input
                 type="text"
