@@ -40,25 +40,33 @@ const Header = () => {
           <nav className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("inicio")}
-              className="text-white hover:text-primary transition-colors duration-300 font-medium"
+              className={`${
+                isScrolled ? "text-primary" : "text-white"
+              } hover:text-primary transition-colors duration-300 font-medium`}
             >
               Início
             </button>
             <button
               onClick={() => scrollToSection("servicos")}
-              className="text-white hover:text-primary transition-colors duration-300 font-medium"
+              className={`${
+                isScrolled ? "text-primary" : "text-white"
+              } hover:text-primary transition-colors duration-300 font-medium`}
             >
               Serviços
             </button>
             <button
               onClick={() => scrollToSection("consultoria")}
-              className="text-white hover:text-primary transition-colors duration-300 font-medium"
+              className={`${
+                isScrolled ? "text-primary" : "text-white"
+              } hover:text-primary transition-colors duration-300 font-medium`}
             >
               Consultoria
             </button>
             <button
               onClick={() => scrollToSection("contato")}
-              className="text-white hover:text-primary transition-colors duration-300 font-medium"
+              className={`${
+                isScrolled ? "text-primary" : "text-white"
+              } hover:text-primary transition-colors duration-300 font-medium`}
             >
               Contato
             </button>
@@ -76,7 +84,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white"
+            className={`md:hidden ${isScrolled ? "text-primary" : "text-white"}`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
