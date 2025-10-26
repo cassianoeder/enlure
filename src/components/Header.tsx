@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import enlureLogo from "@/assets/enlure-logo.png";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -32,33 +33,32 @@ const Header = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold text-primary">Enlure</h1>
-            <p className="text-xs text-muted-foreground -mt-1">Conectando confiança</p>
+            <img src={enlureLogo} alt="Enlure" className="h-12 w-auto" />
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("inicio")}
-              className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+              className="text-white hover:text-primary transition-colors duration-300 font-medium"
             >
               Início
             </button>
             <button
               onClick={() => scrollToSection("servicos")}
-              className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+              className="text-white hover:text-primary transition-colors duration-300 font-medium"
             >
               Serviços
             </button>
             <button
               onClick={() => scrollToSection("consultoria")}
-              className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+              className="text-white hover:text-primary transition-colors duration-300 font-medium"
             >
-              Consultoria e Cursos
+              Consultoria
             </button>
             <button
               onClick={() => scrollToSection("contato")}
-              className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
+              className="text-white hover:text-primary transition-colors duration-300 font-medium"
             >
               Contato
             </button>
@@ -76,7 +76,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground"
+            className="md:hidden text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -103,7 +103,7 @@ const Header = () => {
                 onClick={() => scrollToSection("consultoria")}
                 className="text-foreground hover:text-primary transition-colors duration-300 font-medium text-left px-4"
               >
-                Consultoria e Cursos
+                Consultoria
               </button>
               <button
                 onClick={() => scrollToSection("contato")}

@@ -1,4 +1,4 @@
-import { Network, Shield, Brain, GraduationCap } from "lucide-react";
+import { Network, Shield, Brain } from "lucide-react";
 import ServiceCard from "./ServiceCard";
 
 const Services = () => {
@@ -18,11 +18,6 @@ const Services = () => {
       title: "Consultoria em TI",
       description: "Análise estratégica e planejamento tecnológico para otimizar processos da sua empresa.",
     },
-    {
-      icon: GraduationCap,
-      title: "Treinamentos e Cursos Técnicos",
-      description: "Capacitação profissional em tecnologia com instrutores especializados e certificados.",
-    },
   ];
 
   return (
@@ -35,7 +30,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} delay={index * 0.1} />
           ))}
