@@ -54,7 +54,7 @@ const Contact = () => {
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Fale conosco</h2>
             <p className="text-lg text-primary-foreground/90">
-              Estamos prontos para ajudar sua empresa a alcançar novos patamares tecnológicos
+              Vamos conversar sobre como a tecnologia pode impulsionar seu pequeno negócio
             </p>
           </div>
 

@@ -35,8 +35,7 @@ const Hero = () => {
               Conectando confiança através da tecnologia.
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto lg:mx-0">
-              Soluções em TI, redes, backup e consultoria para empresas que valorizam segurança e
-              performance.
+              Soluções em TI, redes, backup e consultoria sob medida para pequenas e micro empresas que valorizam segurança e crescimento sustentável.
             </p>
             <Button
               onClick={scrollToContact}

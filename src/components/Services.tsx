@@ -6,17 +6,17 @@ const Services = () => {
     {
       icon: Network,
       title: "Infraestrutura e Redes",
-      description: "Projetos e implementação de redes corporativas com alta disponibilidade e performance.",
+      description: "Soluções acessíveis de rede para conectar sua equipe com eficiência e segurança, mesmo com orçamento limitado.",
     },
     {
       icon: Shield,
       title: "Backup e Segurança",
-      description: "Proteção completa dos seus dados com soluções de backup automatizado e cibersegurança.",
+      description: "Proteja os dados do seu negócio com backup automatizado e segurança digital de forma simples e acessível.",
     },
     {
       icon: Brain,
       title: "Consultoria em TI",
-      description: "Análise estratégica e planejamento tecnológico para otimizar processos da sua empresa.",
+      description: "Orientação técnica personalizada para pequenas empresas crescerem com tecnologia inteligente e custo-benefício.",
     },
   ];
 

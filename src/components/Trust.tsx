@@ -25,11 +25,10 @@ const Trust = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Tranquilidade digital para sua empresa
+              Tecnologia acessível para pequenas empresas
             </h2>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Com a Enlure, sua empresa ganha tranquilidade digital. Nossa equipe atua com
-              excelência técnica, ética e foco em resultados.
+              Entendemos os desafios de pequenas e micro empresas. Por isso, oferecemos soluções tecnológicas eficientes, com preços justos e atendimento humanizado para fazer seu negócio crescer com segurança.
             </p>
           </div>
 
